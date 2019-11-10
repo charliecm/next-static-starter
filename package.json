@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "NODE_ENV=development concurrently -r 'node build-manifest' 'next'",
-		"build": "NODE_ENV=production node build-manifest && node build-rss && node build-sitemap && next build",
+		"build": "NODE_ENV=production node build-manifest && node build-sitemap && next build",
 		"export": "NODE_ENV=production npm run build && next export && cp now.json out/",
 		"test": "http-server out",
 		"export-test": "npm run export && npm run test"
