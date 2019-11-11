@@ -11,13 +11,14 @@ import { TextSize } from '@styles/theme'
 import { isExternal as isHrefExternal, persistActive } from '@utils/common'
 import { Outbound } from '@components/Outbound'
 
+// TODO: Update button colors
 const hoverTiming = '0.2s'
-const textColor = theme.palette.charcoal800
-const bgColor = theme.palette.charcoal10
-const bgColorActive = theme.palette.charcoal20
-const primaryTextColor = theme.palette.goldDark
-const primaryBgColor = theme.palette.gold500
-const primaryBgColorActive = theme.palette.gold600
+const textColor = theme.palette.black
+const bgColor = theme.palette.black
+const bgColorActive = theme.palette.black
+const primaryTextColor = theme.palette.black
+const primaryBgColor = theme.palette.black
+const primaryBgColorActive = theme.palette.black
 
 type Props = Partial<React.AnchorHTMLAttributes<HTMLAnchorElement>> & {
   /** If true, use primary style. */
@@ -61,7 +62,7 @@ const StyledButton = styled(Button)`
   border-radius: 100vw;
   background-color: ${p => (p.primary ? primaryBgColor : bgColor)};
   padding: ${rem(8)} ${rem(24)};
-  font-weight: ${theme.font.primary.medium};
+  font-weight: ${theme.font.primary.bold};
   text-align: center;
   text-decoration: none;
   color: ${p => (p.primary ? primaryTextColor : textColor)};
