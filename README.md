@@ -108,7 +108,7 @@ export const meta: Meta = {
   description: '',
 }
 
-const Page = () => {
+export default () => {
   return (
     <Wrap>
       <p>Hello!</p>
@@ -119,8 +119,6 @@ const Page = () => {
 const Wrap = styled.div`
   ${wrap(theme.wrap.normal)}
 `
-
-export default Page
 ```
 
 ### Component
