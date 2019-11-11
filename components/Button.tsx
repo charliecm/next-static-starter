@@ -9,7 +9,7 @@ import { gt, responsiveText } from '@styles/mixins'
 import * as theme from '@styles/theme'
 import { TextSize } from '@styles/theme'
 import { isExternal as isHrefExternal, persistActive } from '@utils/common'
-import { Link } from '@components/Link'
+import { Outbound } from '@components/Outbound'
 
 const hoverTiming = '0.2s'
 const textColor = theme.palette.charcoal800
@@ -35,9 +35,9 @@ const Button = ({ href, primary, full, children, ...props }: Props) => {
 
   if (isExternal) {
     return (
-      <Link href={href} {...props}>
+      <Outbound href={href} {...props}>
         {children}
-      </Link>
+      </Outbound>
     )
   }
 

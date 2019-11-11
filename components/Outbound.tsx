@@ -12,7 +12,7 @@ type Props = {
   children: any
 }
 
-const Link = ({ href, className, children }: Props) => (
+const Outbound = ({ href, className, children }: Props) => (
   <a
     href={href}
     target="_blank"
@@ -26,4 +26,4 @@ const Link = ({ href, className, children }: Props) => (
   </a>
 )
 
-export { Link }
+export { Outbound }
