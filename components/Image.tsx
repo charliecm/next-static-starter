@@ -24,7 +24,7 @@ interface Props {
   onLoad?: any
 }
 
-const Image = React.forwardRef(
+const Image = React.forwardRef<HTMLImageElement, Props>(
   (
     {
       src,
@@ -40,8 +40,8 @@ const Image = React.forwardRef(
       id,
       onLoadBegin,
       onLoad,
-    }: Props,
-    ref: React.RefObject<HTMLImageElement>
+    },
+    ref
   ) => {
     if (!src && !srcSet) {
       throw Error('Image needs to have either a src or srcSet.')
