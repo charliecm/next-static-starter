@@ -9,6 +9,7 @@ import { TextScale, wrap as Size } from '@styles/theme'
 import { getDropMargin } from '@styles/utils'
 import { rem } from 'polished'
 import styled from 'styled-components'
+import React from 'react'
 
 type Props = React.HTMLAttributes<HTMLDivElement> & {
   width?: Size | number
@@ -28,10 +29,12 @@ type Props = React.HTMLAttributes<HTMLDivElement> & {
   align?: 'left' | 'center' | 'right'
 }
 
-const Wrap = ({ className, children, ...props }: Props) => (
-  <StyledWrap {...props} className={className}>
-    {children}
-  </StyledWrap>
+const Wrap = React.forwardRef<HTMLDivElement, Props>(
+  ({ className, children, ...props }, ref) => (
+    <StyledWrap {...props} ref={ref} className={className}>
+      {children}
+    </StyledWrap>
+  )
 )
 
 const StyledWrap = styled.div<Props>`
