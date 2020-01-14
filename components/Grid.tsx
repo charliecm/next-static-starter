@@ -41,7 +41,7 @@ type RowProps = {
    * Workaround for styled-components `as` prop because of this issue:
    * https://github.com/styled-components/styled-components/issues/2448
    */
-  useAs?: keyof JSX.IntrinsicElements
+  useAs?: any
   className?: string
   children: any
 }
