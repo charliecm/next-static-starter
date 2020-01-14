@@ -7,34 +7,34 @@
 		"export-test": "npm run export && npm run test"
 	},
 	"dependencies": {
-		"framer-motion": "^1.6.15",
-		"lazysizes": "^5.1.2",
-		"next": "^9.1.3",
+		"framer-motion": "^1.7.0",
+		"lazysizes": "^5.2.0",
+		"next": "^9.1.7",
 		"polished": "^3.4.2",
-		"react": "^16.11.0",
-		"react-dom": "^16.11.0",
-		"styled-components": "^4.4.1"
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"styled-components": "^5.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.7.2",
-		"@babel/register": "^7.7.0",
-		"@types/node": "^12.12.6",
-		"@types/react": "^16.9.11",
+		"@babel/core": "^7.8.3",
+		"@babel/register": "^7.8.3",
+		"@types/node": "^12.12.24",
+		"@types/react": "^16.9.17",
 		"@types/styled-components": "^4.1.22",
-		"babel-plugin-module-resolver": "^3.2.0",
+		"babel-plugin-module-resolver": "^4.0.0",
 		"babel-plugin-styled-components": "^1.10.6",
 		"chalk": "^2.4.2",
-		"chokidar": "^3.3.0",
+		"chokidar": "^3.3.1",
 		"clipboardy": "^2.1.0",
-		"concurrently": "^5.0.0",
+		"concurrently": "^5.0.2",
 		"glob": "^7.1.6",
 		"json-loader": "^0.5.7",
 		"modernizr": "^3.8.0",
 		"modernizr-loader": "^1.0.1",
 		"next-compose-plugins": "^2.2.0",
-		"node-vibrant": "^3.1.4",
-		"sharp": "^0.23.2",
+		"node-vibrant": "^3.1.5",
+		"sharp": "^0.23.4",
 		"sitemap": "^5.1.0",
-		"typescript": "^3.6.4"
+		"typescript": "^3.7.4"
 	}
 }
